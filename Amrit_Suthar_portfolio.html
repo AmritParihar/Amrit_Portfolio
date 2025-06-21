@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amrit Suthar | Backend Developer</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <style>
+    .typing::after {
+      content: "|";
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans scroll-smooth">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-4 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6">
+      <h1 class="text-2xl font-bold">Amrit Suthar</h1>
+      <button id="menuToggle" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+      <nav class="hidden md:flex space-x-6 text-gray-300">
+        <a href="#home" class="hover:text-teal-400">Home</a>
+        <a href="#skills" class="hover:text-teal-400">Skills</a>
+        <a href="#projects" class="hover:text-teal-400">Projects</a>
+        <a href="#about" class="hover:text-teal-400">About</a>
+        <a href="#contact" class="hover:text-teal-400">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobileMenu" class="md:hidden hidden bg-gray-800 px-6 pb-4">
+      <a href="#home" class="block py-2 text-gray-200 hover:text-teal-400">Home</a>
+      <a href="#skills" class="block py-2 text-gray-200 hover:text-teal-400">Skills</a>
+      <a href="#projects" class="block py-2 text-gray-200 hover:text-teal-400">Projects</a>
+      <a href="#about" class="block py-2 text-gray-200 hover:text-teal-400">About</a>
+      <a href="#contact" class="block py-2 text-gray-200 hover:text-teal-400">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="bg-gray-100 px-6 py-20">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/2 space-y-6">
+        <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+          I AM <span class="text-teal-500">AMRIT</span><br />
+          <span class="typing text-gray-800" id="typeText"></span>
+        </h2>
+        <p class="text-lg text-gray-700">
+          I build scalable backend systems using Node.js, Express.js, MongoDB, and MySQL.
+        </p>
+        <a href="Amrit-Suthar-BackEnd-Developer-Resume.pdf" download class="inline-block border-2 border-teal-500 text-teal-500 px-6 py-3 rounded hover:bg-teal-500 hover:text-white transition font-medium shadow">
+          📄 Download CV
+        </a>
+      </div>
+      <div class="md:w-1/2">
+        <img src="dev2.png" alt="Professional Developer" class="w-full max-w-md mx-auto rounded-lg shadow" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 bg-white">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-semibold text-teal-500 mb-4">About Me</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+           I am a highly motivated backend developer with 1+ year of experience
+          in building scalable, secure server-side applications using Node.js,
+          Express.js, and Nest.js. Currently working as a freelancer on
+          real-world projects involving APIs, authentication, and cloud
+          integration.
+        </p>
+      </div>
+      <img src="About.png" alt="About" class="w-full max-w-sm mx-auto" />
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 px-6 bg-gray-100">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-semibold text-teal-500">Skills</h2>
+    </div>
+    <div class="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center">
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">Node.js</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">Express.js</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">Nest.js</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">MongoDB</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">MySQL</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">Firebase</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">AWS / S3</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">Sequelize</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 px-6 bg-white">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-semibold text-teal-500">Projects</h2>
+      <p class="text-gray-600 mt-2">Some recent work</p>
+    </div>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Blogger's Paradise</h4>
+        <p class="text-gray-600">Blogging platform with likes, comments, OTP login, and authentication.</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Maya Visualization</h4>
+        <p class="text-gray-600">3D portal for architects with quotations and user roles.</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Wannabuy</h4>
+        <p class="text-gray-600">Property platform with map search and secure login.</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Fit2gether</h4>
+        <p class="text-gray-600">Trainer booking app with location and payments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Contact -->
+  <section id="contact" class="py-16 px-6 bg-gray-100">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 items-center gap-10">
+      <img src="contact.png" alt="contact" class="w-full max-w-sm mx-auto" />
+      <div>
+        <h2 class="text-3xl font-semibold text-teal-500 mb-4">Contact Me</h2>
+        <form action="https://formsubmit.co/sutharamrit50@gmail.com" method="POST" class="space-y-4">
+          <input type="text" name="name" placeholder="Enter name" required class="w-full border border-gray-300 p-3 rounded" />
+          <input type="email" name="email" placeholder="Enter email" required class="w-full border border-gray-300 p-3 rounded" />
+          <textarea name="message" rows="4" placeholder="Your message" required class="w-full border border-gray-300 p-3 rounded"></textarea>
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+          <button type="submit" class="bg-teal-500 text-white px-6 py-2 rounded hover:bg-teal-600 transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <div class="mb-4 space-x-6 text-xl">
+      <a href="https://linkedin.com/in/amrit-suthar-846b7b1b6" target="_blank"><i class="fab fa-linkedin hover:text-teal-400"></i></a>
+      <a href="https://wa.me/917340527808" target="_blank"><i class="fab fa-whatsapp hover:text-green-400"></i></a>
+      <a href="https://instagram.com/amrit.codes" target="_blank"><i class="fab fa-instagram hover:text-pink-400"></i></a>
+    </div>
+    <p class="text-sm">&copy; 2025 Amrit Suthar. All rights reserved.</p>
+  </footer>
+
+  <!-- Typing Effect + Menu Toggle -->
+  <script>
+    const textElement = document.getElementById("typeText");
+    const phrases = ["NODE.JS DEVELOPER", "BACKEND SPECIALIST", "API ARCHITECT"];
+    let i = 0, j = 0, currentPhrase = "", isDeleting = false;
+
+    function type() {
+      if (i >= phrases.length) i = 0;
+      currentPhrase = phrases[i];
+      let displayText = isDeleting ? currentPhrase.substring(0, j--) : currentPhrase.substring(0, j++);
+      textElement.innerText = displayText;
+
+      if (!isDeleting && j === currentPhrase.length + 1) {
+        isDeleting = true;
+        setTimeout(type, 1000);
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i++;
+        setTimeout(type, 400);
+      } else {
+        setTimeout(type, isDeleting ? 40 : 100);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", type);
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
